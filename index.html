@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Restinga Labs</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="/images/icons/logo-reslab.svg" sizes="48x48">
+  <meta name="description"
+    content="Solução em Energia Solar, Elétrica, Sistema de Proteção contra Descarga Atmosférica, Manuteção e Comissionamento de Subestação de 13,8 KV, Desenvolvimento de Sites, Suporte em Linux " />
+  <meta name="keywords"
+    content="restinga labs, energia solar, energia fotovoltaica, venda de kits fotovoltaico, instalação, manutenção, sistema de proteção contra descarga atmosférica, spda, elétrica, baixa tensão, subestação, linux, desenvolvimento de sites" />
+</head>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-round-xxlarge" href="javascript:void(0);"
+        onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button w3-round-xxlarge">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-round-xxlarge">QUEM SOMOS</a>
+      <a href="solar.html" class="w3-bar-item w3-button w3-hide-small w3-round-xxlarge">ENERGIA SOLAR</a>
+      <a href="eletrica.html" class="w3-bar-item w3-button w3-hide-small w3-round-xxlarge">ELÉTRICA</a>
+      <a href="informatica.html" class="w3-bar-item w3-button w3-hide-small w3-round-xxlarge">INFORMÁTICA</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-round-xxlarge">CONTATO</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">QUEM SOMOS</a>
+      <a href="solar.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ENERGIA SOLAR</a>
+      <a href="eletrica.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ELÉTRICA</a>
+      <a href="informatica.html" class="w3-bar-item w3-button" onclick="toggleFunction()">INFORMÁTICA</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTATO</a>
+    </div>
+  </div>
+
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-display-container" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity"><span><img
+            src="images/nome-reslab.svg" alt="Logo e nome da Restinga Labs" width="100%" height="150px"
+            width="150px"></span></span>
+    </div>
+  </div>
+
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">QUEM SOMOS</h3>
+    <p>A Restinga Labs tem o propósito de levar a sustentabilidade à sociedade em geral, de forma clara, objetiva e
+      segura, nos ramos de: Energia Fotovoltaica, SPDA - (Sistema de Proteção contra Descarga Atmosférica), Manutenção e
+      Comissionamento de Subestação de 13,8KV, Elétrica baixa tensão e Informática.</p>
+  </div>
+
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+    </div>
+  </div>
+
+  <!-- Container (Portfolio Section) -->
+  <div class="w3-content w3-container w3-padding-64 w3-center" id="portfolio">
+
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+      <div class="w3-third w3-center" style="width:auto">
+        <img src="images/outras/selo-qualidade.png" alt="Selo de qualidade" style="width: 100px;height: 100px">
+        <div class="w3-container w3-white">
+          <p><b>Qualidade</b></p>
+          <p>Garantimos qualidade em nossos serviços</p>
+        </div>
+      </div>
+
+      <div class="w3-third w3-center" style="width:auto">
+        <img src="images/outras/abnt-logo.png" alt="Logo da ABNT" style="width: 100px;height: 100px">
+        <div class="w3-container w3-white">
+          <p><b>Normas</b></p>
+          <p>Seguimos normas vigentes no Brasil</p>
+        </div>
+      </div>
+
+      <div class="w3-third w3-center" style="width:auto">
+        <img src="images/outras/verde.png" alt="Selo verde" style="width: 100px;height: 100px">
+        <div class="w3-container w3-white">
+          <p><b>Meio Ambiente</b></p>
+          <p>Respeitamos o Meio Ambiente e Planeta</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+        class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+  <!-- Third Parallax Image with Portfolio Text -->
+  <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+    </div>
+  </div>
+
+  <!-- Container (Contact Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="contact">
+    <h3 class="w3-center">Contato</h3>
+
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m4 w3-container">
+        <img src="/images/outras/smartphone.jpg" class="w3-image w3-round w3-opacity" style="width:100%">
+      </div>
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="w3-hover-text-black w3-xlarge w3-margin-right"></i><img src="images/icons/person.svg"> Wilton
+          Gonçalves<br>
+          <i class="w3-hover-text-black w3-xlarge w3-margin-right"></i><img src="images/icons/phone.svg"><a
+            href="https://api.whatsapp.com/send?phone=557183472204" target="_blank">Telefone: (71)9.83472204</a>
+          <br>
+          <i class="w3-hover-text-black w3-xlarge w3-margin-right"></i><img src="images/icons/person.svg"> Arcanjo
+          Lucena<br>
+          <i class="w3-hover-text-black w3-xlarge w3-margin-right"></i><img src="images/icons/phone.svg"><a
+            href="https://api.whatsapp.com/send?phone=557183328050" target="_blank"> Telefone: (71)9.8432-8050</a><br>
+        </div>
+        <form action="https://formspree.io/f/xpzbpnyb" method="POST">
+          <input type="hidden" name="_autoresponse" value="Recebemos a sua mensagem, aguarde o nosso contato!">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" class="text" name="name" placeholder="Nome" required>
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="email" class="text" name="email" placeholder="Email" required>
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" name="message" placeholder="Mensagem" required>
+          <button class="w3-button w3-round-xxlarge w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> Enviar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-padding-16 footer">
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-github w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="Wilton Gonçalves" target="_blank"
+        class="w3-hover-text-green">W3.CSS</a></p>
+  </footer>
+
+  <!-- Script -->
+  <script src="js/w3.js"></script>
+  <script src="js/style.js"></script>
+
+</body>
+
+</html>
