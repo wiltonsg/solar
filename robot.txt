@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /images/
-Disallow: /images/icones
-Allow: /js/
-Allow: /css/
-Sitemap: /sitemap.xml
